@@ -1,7 +1,20 @@
 
+@font-face {
+  font-family: 'WebSymbolsLiga';
+  src: url('../fonts/websymbolsligaregular.eot');
+  src:
+  url('../fonts/websymbolsligaregular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/websymbolsligaregular.woff') format('woff'),
+  url('../fonts/websymbolsligaregular.ttf') format('truetype'),
+  url('../fonts/websymbolsligaregular.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
+  font-family: "Roboto", "Tahoma", sans-serif;
 }
 
 .container {
@@ -84,3 +97,156 @@ body {
 .col-offset11 {  margin-left: 91.66%; }
 
 .col-offset12 {  margin-left: 100%;    }
+
+
+
+
+
+
+
+
+
+
+/*//////////HEADER//////////*/
+
+
+
+
+
+
+
+
+
+
+/*//////////PROMO//////////*/
+
+
+
+
+
+
+
+
+
+
+/*//////////ADVANTAGES//////////*/
+
+
+
+
+
+
+
+
+
+
+/*//////////ABOUT//////////*/
+
+
+
+
+
+
+
+
+
+
+/*//////////GALLERY//////////*/
+
+
+
+
+
+
+
+
+
+
+/*//////////FLIGHTS-HOW//////////*/
+
+
+
+
+
+
+
+
+
+
+/*//////////COUNTER//////////*/
+
+
+
+
+
+
+
+
+
+
+/*//////////PRICE//////////*/
+
+
+
+
+
+
+
+
+
+/*//////////PAYMENT-FAQ//////////*/
+
+
+
+
+
+
+
+
+
+
+/*//////////STATS//////////*/
+
+
+
+
+
+
+
+
+
+
+/*//////////TEAM//////////*/
+
+
+
+
+
+
+
+
+
+
+/*//////////REVIEWS//////////*/
+
+
+
+
+
+
+
+
+
+
+/*//////////CONTACTS//////////*/
+
+
+
+
+
+
+
+
+
+
+/*//////////FOOTER//////////*/
