@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
 </head>
 <body>
@@ -19,23 +21,23 @@
         </div>
         <nav class="main-nav col9">
           <ul>
-            <li>
-              <a class="main-nav__item" href="#">Кто мы</a>
+            <li class="main-nav-list">
+              <a class="main-nav-list__item" href="#about">Кто мы</a>
             </li>
-            <li>
-              <a class="main-nav__item" href="#">Фотографии</a>
+            <li class="main-nav-list">
+              <a class="main-nav-list__item" href="#photo">Фотографии</a>
             </li>
-            <li>
-              <a class="main-nav__item" href="#">План полёта</a>
+            <li class="main-nav-list">
+              <a class="main-nav-list__item" href="#flight">План полёта</a>
             </li>
-            <li>
-              <a class="main-nav__item" href="#">Заказать</a>
+            <li class="main-nav-list">
+              <a class="main-nav-list__item" href="#price">Заказать</a>
             </li>
-            <li>
-              <a class="main-nav__item" href="#">Команда</a>
+            <li class="main-nav-list">
+              <a class="main-nav-list__item" href="#team">Команда</a>
             </li>
-            <li>
-              <a class="main-nav__item" href="#">Контакты</a>
+            <li class="main-nav-list">
+              <a class="main-nav-list__item" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -46,7 +48,7 @@
   <main>
     <div class="promo">
       <div class="container">
-        <h1 class="promo-title">Организация полетов на воздушных шарах</h1>
+        <h1 class="promo-title">Организация полетов на&nbsp;воздушных шарах</h1>
         <a href="#about" class="promo-btn">Подробнее</a>
       </div>
     </div>
@@ -55,28 +57,28 @@
       <div class="container">
         <ul class="row advantages-list">
           <li class="advantages-item advantages-item_like col3">
-            <span class="advantages__text">Современный надежный шар</span>
+            <p class="advantages-item__text">Современный надежный шар</p>
           </li>
           <li class="advantages-item advantages-item_glasses col3">
-            <span class="advantages__text">Обучение пилотированию</span>
+            <p class="advantages-item__text">Обучение пилотированию</p>
           </li>
           <li class="advantages-item advantages-item_photo col3">
-            <span class="advantages__text">Фотосъемка в полете</span>
+            <p class="advantages-item__text">Фотосъемка в&nbsp;полете</p>
           </li>
           <li class="advantages-item advantages-item_zoom col3">
-            <span class="advantages__text">Потрясающие виды</span>
+            <p class="advantages-item__text">Потрясающие виды</p>
           </li>
         </ul>
       </div>
     </div>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <div class="row">
           <div class="col4">
             <h2 class="about__title">Вкратце</h2>
             <p class="about__text">
-              Более 5 лет воздухоплавательная команда Нева-Аэро выполняет полёты на&nbsp;воздушных шарах для гостей и&nbsp;жителей Петербурга над&nbsp;одними из&nbsp;самых живописных мест России – Царским Селом и&nbsp;Павловском, возведенных в&nbsp;Пушкинском районе Санкт-Петербурга.
+              Более 5 лет воздухоплавательная команда Нева-Аэро выполняет полёты на воздушных шарах для гостей и&nbsp;жителей Петербурга над&nbsp;одними из&nbsp;самых живописных мест России – Царским Селом и&nbsp;Павловском, возведенных в Пушкинском районе Санкт-Петербурга.
             </p>
             <p class="about__text">
               Мы предлагаем полетать с&nbsp;нами!
@@ -84,26 +86,26 @@
           </div>
           <div class="about__video col8">
             <div style="position:relative;height:0;padding-bottom:56.25%">
-            <iframe src="https://www.youtube.com/embed/ebYt-jlCeL4?rel=0?ecver=2" width="100%" height="344" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/ebYt-jlCeL4?rel=0?ecver=2" width="100%" height="344px" frameborder="0" style="position:absolute;width:100%;height:344px;left:0" allowfullscreen></iframe>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="gallery">
+    <section class="gallery" id="photo">
       <div class="container">
         <h2 class="gallery-title">Галерея</h2>
-        <div class="gallery-items owl-carousel">
-          <div class="gallery__item"><img src="" alt="" ></div>
-          <div class="gallery__item"><img src="" alt="" ></div>
-          <div class="gallery__item"><img src="" alt="" ></div>
-          <div class="gallery__item"><img src="" alt="" ></div>
+        <div class="gallery-items owl-carousel owl-theme">
+          <div class="gallery__item"><img src="img/gallery-1_small.jpg" alt="воздушные шары" ></div>
+          <div class="gallery__item"><img src="img/gallery-2_small.jpg" alt="воздушные шары" ></div>
+          <div class="gallery__item"><img src="img/gallery-3_small.jpg" alt="воздушные шары" ></div>
+          <div class="gallery__item"><img src="img/gallery-4_small.jpg" alt="воздушные шары" ></div>
         </div>
       </div>
     </section>
 
-    <section class="flight-how">
+    <section class="flight-how" id="flight">
       <div class="container">
         <h2 class="flight-how__title">Как проходят полёты</h2>
         <ol>
@@ -123,7 +125,7 @@
     </div>
 
 
-    <section class="price">
+    <section class="price" id="price">
       <div class="container">
         <div class="row">
           <div class="col5">
@@ -229,7 +231,7 @@
       </div>
     </section>
 
-    <section class="team">
+    <section class="team" id="team">
       <div class="container">
         <div class="row">
           <h2 class="team-title">Команда инструкторов</h2>
@@ -275,7 +277,7 @@
       </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <div class="container">
         <div class="row">
           <div class="contacts-airport col4 col-offset4">
@@ -345,6 +347,10 @@
     </footer>
 
   </main>
+  
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 </html>

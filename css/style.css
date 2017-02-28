@@ -109,6 +109,58 @@ body {
 
 /*//////////HEADER//////////*/
 
+.page-header {
+  padding-top: 19px;
+  padding-bottom: 16px;
+  background-color: #2c2c2c;
+}
+
+.logo {
+  float: left;
+  display: inline-block;
+  margin-top: 4px;
+  margin-bottom: 0;
+  margin-left: -3px;
+}
+
+.logo-text {
+  vertical-align: middle;
+  font-size: 22px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.main-nav {
+  float: right;
+  text-align: right;
+  font-size: 0;
+}
+
+.main-nav-list {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 7px 7px 5px 10px;
+  margin-left: 13px;
+  list-style: none;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.main-nav-list:hover {
+  border-color: #ffffff;
+}
+
+.main-nav-list:last-child {
+  margin-right: -14px;
+}
+
+.main-nav-list__item {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+}
+
 
 
 
@@ -119,6 +171,35 @@ body {
 
 
 /*//////////PROMO//////////*/
+
+.promo {
+  padding-top: 173px;
+  padding-bottom: 97px;
+  text-align: center;
+  background-image: url(../img/promo-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center 16%;
+}
+
+.promo-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 66px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.promo-btn {
+  display: inline-block;
+  padding: 10px 12px 8px 13px;
+  margin-top: 177px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+}
 
 
 
@@ -131,6 +212,78 @@ body {
 
 /*//////////ADVANTAGES//////////*/
 
+.advantages {
+  padding-top: 86px;
+  padding-bottom: 91px;
+}
+
+.advantages-list {
+  padding-left: 0;
+  font-size: 0;
+}
+
+.advantages-item {
+  display: inline-block;
+  list-style: none;
+}
+
+.advantages-item:before {
+  content: '';
+  float: left;
+  display: inline-block;
+  height: 50px;
+  width: 65px;
+  margin-right: 15px;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-position: center center;
+}
+
+.advantages-item_like:before {
+  background-image: url(../img/advantages-like.svg);
+  width: 56px;
+  height: 58px;
+  margin-left: 9px;
+  margin-right: 22px;
+  margin-top: -2px;
+}
+
+.advantages-item_glasses:before {
+  background-image: url(../img/advantages-glasses.svg);
+  width: 75px;
+  height: 58px;
+  margin-left: -6px;
+  margin-right: 22px;
+  margin-top: 2px;
+}
+
+.advantages-item_photo:before {
+  background-image: url(../img/advantages-photo.svg);
+  width: 65px;
+  height: 58px;
+  margin-left: 9px;
+  margin-right: 25px;
+}
+
+.advantages-item_zoom:before {
+  background-image: url(../img/advantages-zoom.svg);
+  width: 72px;
+  height: 58px;
+  margin-left: 3px;
+  margin-right: 26px;
+}
+
+
+.advantages-item__text {
+  margin-top: 9px;
+  margin-bottom: 7px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #444444;
+  line-height: 1.25;
+}
+
 
 
 
@@ -141,6 +294,45 @@ body {
 
 
 /*//////////ABOUT//////////*/
+
+.about {
+  padding-bottom: 34px;
+}
+
+.about__title {
+  margin-top: -7px;
+  margin-bottom: 57px;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.about__title:after {
+  content: '';
+  position: relative;
+  top: 13px;
+  display: block;
+  height: 6px;
+  width: 62px;
+  background-color: #3e98d7;
+}
+
+.about__text {
+  margin-top: 0;
+  margin-bottom: 24px;
+  margin-left: -2px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.about:after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 1140px;
+  margin: 34px auto 0;
+  background-color: #cccccc;
+}
 
 
 
@@ -153,10 +345,32 @@ body {
 
 /*//////////GALLERY//////////*/
 
+.gallery {
+  padding-top: 63px;
+  text-align: center;
+}
 
+.gallery-title {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 87px;
+  margin-left: -8px;
+  font-size: 32px;
+  font-weight: 500;
+}
 
-
-
+.gallery-title:after {
+  content: '';
+  position: absolute;
+  bottom: -19px;
+  left: 50%;
+  margin-left: 3px;
+  display: block;
+  height: 6px;
+  width: 62px;
+  background-color: #3e98d7;
+  transform: translateX(-50%);
+}
 
 
 
