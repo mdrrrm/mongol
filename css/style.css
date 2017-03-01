@@ -304,6 +304,7 @@ body {
   margin-bottom: 57px;
   font-size: 32px;
   font-weight: 500;
+  color: #444444;
 }
 
 .about__title:after {
@@ -322,6 +323,7 @@ body {
   margin-left: -2px;
   font-size: 18px;
   font-weight: 400;
+  color: #444444;
   line-height: 24px;
 }
 
@@ -358,6 +360,7 @@ body {
   margin-left: -8px;
   font-size: 32px;
   font-weight: 500;
+  color: #444444;
 }
 
 .gallery__title:after {
@@ -398,8 +401,8 @@ body {
   padding-bottom: 599px;
   text-align: center;
   background-image: url(../img/flight-how-bg.jpg);
-  -webkit-background-size: contain;
-  background-size: contain;
+  -webkit-background-size: cover;
+  background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
 }
@@ -410,6 +413,7 @@ body {
   margin-left: 6px;
   font-size: 32px;
   font-weight: 500;
+  color: #444444;
 }
 
 .flight-how__title:after {
@@ -494,7 +498,6 @@ body {
   left: 1167px;
 }
 
-
 .flight-how__number_1 {
   top: 339px;
   left: 129px;
@@ -522,7 +525,29 @@ body {
 
 
 
+
+
+
+
+
+
+
 /*//////////COUNTER//////////*/
+
+.counter {
+  padding-top: 33px;
+  padding-bottom: 31px;
+  background-color: #f2f2f2;
+}
+
+.counter__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 1px;
+  font-size: 32px;
+  font-weight: 500;
+  color: #26668e;
+}
 
 
 
@@ -535,7 +560,107 @@ body {
 
 /*//////////PRICE//////////*/
 
+.price {
+  padding-top: 93px;
+  padding-bottom: 150px;
+}
 
+.price__title {
+  margin-top: -7px;
+  margin-bottom: 58px;
+  font-size: 32px;
+  font-weight: 500;
+  color: #444444;
+}
+
+.price__title:after {
+  content: '';
+  position: relative;
+  top: 13px;
+  left: 1px;
+  display: block;
+  height: 6px;
+  width: 62px;
+  background-color: #3e98d7;
+}
+
+.price__text {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #444444;
+  line-height: 24px;
+}
+
+.price-calculator__label {
+  float: left;
+  clear: left;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.price-calculator__label:first-child {
+  margin-top: 9px;
+}
+
+.price-calculator__input {
+  float: right;
+  clear: right;
+  width: 355px;
+  padding: 8px 5px 8px 5px;
+  margin-top: -3px;
+  margin-bottom: 10px;
+  margin-right: -1px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #444444;
+  border-radius: 3px;
+  border-width: 1px;
+  border-color: #444444;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.price-calculator__input:first-child {
+  margin-top: 0;
+  background-color: #ddd;
+}
+
+.price-calculator__label_total {
+  margin-top: 20px;
+  margin-left: 1px;
+  margin-right: 14px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #444444;
+}
+
+.price-calculator__total-sum, .price-calculator__total-sum_rub {
+  float: left;
+  margin-top: 9px;
+  margin-right: 9px;
+  font-size: 38px;
+  font-weight: 500;
+  color: #f97e7e;
+}
+
+.price-calculator__submit {
+  float: right;
+  clear: right;
+}
+
+.price:after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 1140px;
+  margin: 34px auto 0;
+  background-color: #cccccc;
+}
 
 
 

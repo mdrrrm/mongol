@@ -133,15 +133,15 @@
       <div class="container">
         <div class="row">
           <div class="col5">
-            <h2 class="price-title">Рассчитать стоимость</h2>
-            <p class="price-text">Итак, в&nbsp;назначенное время вы&nbsp;приехали на&nbsp;место полета. Команда уже&nbsp;готовит шар к&nbsp;полету - определяется направление ветра, запускаются горелки.</p>
-            <p class="price-text">Оболочка начинает заполняться теплым воздухом, и&nbsp;аэростат делает первый «вздох». </p>
-            <p class="price-text">Выбирайте, куда мы&nbsp;полетим сегодня!</p>
+            <h2 class="price__title">Рассчитать стоимость</h2>
+            <p class="price__text">Итак, в&nbsp;назначенное время вы&nbsp;приехали на&nbsp;место полета. Команда уже&nbsp;готовит шар к&nbsp;полету - определяется направление ветра, запускаются горелки.</p>
+            <p class="price__text">Оболочка начинает заполняться теплым воздухом, и&nbsp;аэростат делает первый «вздох». </p>
+            <p class="price__text">Выбирайте, куда мы&nbsp;полетим сегодня!</p>
           </div>
           <div class="col6 col-offset1">
             <form class="price-calculator" action="">
               <label class="price-calculator__label" for="route">Маршрут полёта:</label>
-              <select class="price-calculator__select" id="route">
+              <select class="price-calculator__input price-calculator__input_select" id="route">
                 <option value="">Сестрорецк – Парнас</option>
                 <option value=""></option>
                 <option value=""></option>
@@ -153,7 +153,8 @@
               <label class="price-calculator__label" for="phone">Телефон:</label>
               <input class="price-calculator__input price-calculator__input_phone" id="phone" type="text" placeholder="89215674566">
               <label class="price-calculator__label price-calculator__label_total" for="total">Стоимость:</label>
-              <output name="" for="">9000</output>
+              <output class="price-calculator__total-sum" name="total">9000</output>
+              <span class="price-calculator__total-sum_rub"> Р</span>
               <input class="price-calculator__submit" type="submit" value="Полетели!">
             </form>
           </div>
