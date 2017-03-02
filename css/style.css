@@ -892,6 +892,7 @@ body {
 /*//////////TEAM//////////*/
 
 .team {
+  padding-top: 93px;
   text-align: center;
 }
 
@@ -908,9 +909,9 @@ body {
 .team__title:after {
   content: '';
   position: absolute;
-  bottom: -19px;
+  bottom: -28px;
   left: 50%;
-  margin-left: 3px;
+  margin-left: 4px;
   display: block;
   height: 6px;
   width: 62px;
@@ -930,7 +931,8 @@ body {
 }
 
 .team-person__name {
-  margin-top: 5px;
+  margin-top: 29px;
+  margin-left: 2px;
   display: block;
   font-size: 22px;
   font-weight: 500;
@@ -938,7 +940,7 @@ body {
 }
 
 .team-person__position {
-  margin-top: 5px;
+  margin-top: 9px;
   display: block;
   font-size: 18px;
   font-weight: 500;
@@ -957,13 +959,15 @@ body {
 /*//////////REVIEWS//////////*/
 
 .reviews {
+  padding-top: 106px;
+  padding-bottom: 52px;
   text-align: center;
 }
 
 .reviews__title {
   position: relative;
   margin-top: 0;
-  margin-bottom: 87px;
+  margin-bottom: 80px;
   margin-left: -8px;
   font-size: 32px;
   font-weight: 500;
@@ -973,9 +977,9 @@ body {
 .reviews__title:after {
   content: '';
   position: absolute;
-  bottom: -19px;
+  bottom: -29px;
   left: 50%;
-  margin-left: 3px;
+  margin-left: 4px;
   display: block;
   height: 6px;
   width: 62px;
@@ -991,7 +995,7 @@ body {
 
 .reviews-item__author {
   display: block;
-  margin-top: 15px;
+  margin-top: 22px;
   font-size: 22px;
   font-weight: 500;
   color: #444444;
@@ -1001,6 +1005,7 @@ body {
   display: block;
   font-size: 18px;
   font-weight: 400;
+  line-height: 1.35;
   color: #444444;
 }
 
@@ -1016,6 +1021,7 @@ body {
 /*//////////CONTACTS//////////*/
 
 .contacts {
+  padding-top: 140px;
   background-image: url(../img/contacts-bg.jpg);
   -webkit-background-size: cover;
   background-size: cover;
@@ -1023,28 +1029,80 @@ body {
 }
 
 .contacts-airport__title {
+  position: relative;
   display: block;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
   font-size: 26px;
   font-weight: 500;
   color: #444444;
 }
 
+.contacts-airport__title:before {
+  content: '';
+  position: absolute;
+  top: -84px;
+  left: 50%;
+  display: block;
+  width: 62px;
+  height: 62px;
+  margin-left: 4px;
+  background-image: url(../img/contacts-airport_plane.svg);
+  -webkit-background-size: 41px, 40px;
+  background-size: 41px, 40px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #337ba0;
+  border-radius: 9px;
+  transform: translateX(-50%);
+}
+
 .contacts-airport__adress {
   display: block;
+  text-align: center;
+  margin-bottom: 60px;
   font-size: 18px;
   font-weight: 500;
   color: #616161;
 }
 
+
+
+
+
+.contacts-office {
+  padding-left: 57px;
+  padding-bottom: 61px;
+}
+
 .contacts-office__title {
+  position: relative;
   display: block;
+  margin-bottom: 11px; 
   font-size: 22px;
   font-weight: 500;
   color: #2b2b2b;
 }
 
+.contacts-office__title:before {
+  content: '';
+  position: absolute;
+  left: -56px;
+  top: 5px;
+  display: block;
+  width: 35px;
+  height: 50px;
+  background-image: url(../img/contacts-pin.svg);
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .contacts-office__adress, .contacts-office__open-time {
   display: block;
+  margin-left: 2px;
+  margin-bottom: 3px;
   font-size: 20px;
   font-weight: 500;
   color: #525252;
@@ -1052,6 +1110,8 @@ body {
 
 .contacts-office__phone {
   display: block;
+  margin-top: 14px;
+  margin-left: 3px;
   font-size: 26px;
   font-weight: 500;
   color: #292929;
@@ -1059,14 +1119,44 @@ body {
 }
 
 .contacts-links__mail {
+  position: relative;
+  display: block;
+  margin-left: 49px;
   font-size: 22px;
   font-weight: 500;
   color: #444444;
 }
 
+.contacts-links__mail:before {
+  content: '';
+  position: absolute;
+  left: -44px;
+  top: 8px;
+  display: block;
+  width: 23px;
+  height: 17px;
+  background-image: url(../img/contacts-mail.svg);
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
 
+.contacts-links__social {
+  display: inline-block;
+  margin-top: 26px;
+  margin-left: 6px;
+  margin-right: 11px;
+  font-family: "WebSymbolsLiga";
+  font-size: 22px;
+  color: #444444;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
 
-
+.contacts-links__social:hover {
+  color: #6f7479;
+  cursor: pointer;
+}
 
 
 
