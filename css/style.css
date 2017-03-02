@@ -98,6 +98,23 @@ body {
 
 .col-offset12 {  margin-left: 100%;    }
 
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
 
 
 
@@ -191,6 +208,7 @@ body {
 }
 
 .promo-btn {
+  position: relative;
   display: inline-block;
   padding: 10px 12px 8px 13px;
   margin-top: 177px;
@@ -199,8 +217,30 @@ body {
   color: #ffffff;
   text-decoration: none;
   border: 1px solid #ffffff;
+  transition: all 0.3s ease;
 }
 
+.promo-btn:after {
+  content: '';
+  position: absolute;
+  bottom: -65px;
+  left: 50%;
+  display: block;
+  width: 18px;
+  height: 29px;
+  background-image: url(../img/promo-arrow.svg);
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  transform: translateX(-50%);
+}
+
+.promo-btn:hover {
+  -webkit-animation: pulse 0.5s ease;
+  -o-animation: pulse 0.5s ease;
+  animation: pulse 0.5s ease;
+  cursor: pointer;
+}
 
 
 
@@ -384,6 +424,13 @@ body {
   box-sizing: border-box;
 }
 
+.owl-prev {
+  width: 21px;
+  height: 32px;
+  background-color: #fff;
+}
+
+
 
 
 
@@ -435,11 +482,15 @@ body {
   float: left;
   width: 100%;
   height: 176px;
-/*  margin-top: 195px;*/
   background-image: url(../img/flight-how-path.png);
   -webkit-background-size: contain;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.flight-how__wrapper {
+  position: relative;
+  margin: 0 auto;
 }
 
 [class^=flight-how__text] {
@@ -447,6 +498,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   color: #454545;
+  text-shadow: 0 0 3px #b1c4a9;
 }
 
 [class^=flight-how__number] {
@@ -474,53 +526,53 @@ body {
 }
 
 .flight-how__text_1 {
-  top: 297px;
-  left: 112px;
+  top: 234px;
+  left: 8px;
 }
 
 .flight-how__text_2 {
-  top: 228px;
-  left: 373px;
+  top: 166px;
+  left: 269px;
 }
 
 .flight-how__text_3 {
-  top: 121px;
-  left: 644px;
+  top: 58px;
+  left: 539px;
 }
 
 .flight-how__text_4 {
-  top: 246px;
-  left: 889px;
+  top: 183px;
+  left: 785px;
 }
 
 .flight-how__text_5 {
-  top: 292px;
-  left: 1167px;
+  top: 229px;
+  left: 1063px;
 }
 
 .flight-how__number_1 {
-  top: 339px;
-  left: 129px;
+  top: 276px;
+  left: 26px;
 }
 
 .flight-how__number_2 {
-  top: 295px;
-  left: 409px;
+  top: 232px;
+  left: 305px;
 }
 
 .flight-how__number_3 {
-  top: 164px;
-  left: 670px;
+  top: 101px;
+  left: 565px;
 }
 
 .flight-how__number_4 {
-  top: 289px;
-  left: 932px;
+  top: 226px;
+  left: 828px;
 }
 
 .flight-how__number_5 {
-  top: 336px;
-  left: 1201px;
+  top: 273px;
+  left: 1096px;
 }
 
 
@@ -610,7 +662,7 @@ body {
   float: right;
   clear: right;
   width: 355px;
-  padding: 8px 5px 8px 5px;
+  padding: 9px 5px 8px 11px;
   margin-top: -9px;
   margin-bottom: 10px;
   margin-right: -1px;
@@ -619,14 +671,84 @@ body {
   color: #444444;
   border-radius: 3px;
   border-width: 1px;
-  border-color: #444444;
+  border-color: #d5d5d5;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  box-shadow: none;
+}
+
+.price-calculator__input::-webkit-input-placeholder {
+  color:#444444;
+  font-size: 18px;
+  font-weight: 400;
+}
+.price-calculator__input::-moz-placeholder {
+  color:#444444;
+  font-size: 18px;
+  font-weight: 400;
+}
+.price-calculator__input:-moz-placeholder {
+  color:#444444;
+  font-size: 18px;
+  font-weight: 400;
+}
+.price-calculator__input:-ms-input-placeholder {
+  color:#444444;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .price-calculator__input_select {
+  position: relative;
   margin-top: 0px;
+}
+
+.price-calculator__input_select:after {
+  content: '-';
+}
+
+select {
+   -webkit-appearance: none; 
+   -moz-appearance: none;
+   appearance: none;     
+}
+
+.price-calculator__input_name {
+  position: relative;
+  padding-left: 37px;
+}
+
+.price-calculator__input_name:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/contacts-name.svg);
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.price-calculator__input_phone {
+  position: relative;
+  padding-left: 37px;
+  padding-top: 10px;
+}
+
+.price-calculator__input_phone:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 19px;
+  height: 19px;
+  background-image: url(../img/contacts-phone.svg);
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .price-calculator__label_total {
@@ -656,7 +778,19 @@ body {
   font-weight: 500;
   color: #ffffff;
   background-color: #46b0dc;
+  border-width: 0;
   border-radius: 5px;
+}
+
+.price-calculator__submit:hover {
+  -webkit-animation: pulse 0.5s ease;
+  -o-animation: pulse 0.5s ease;
+  animation: pulse 0.5s ease;
+  cursor: pointer;
+}
+
+.price-calculator__submit:active {
+  background-color: #2a95c1;
 }
 
 .price:after {
@@ -919,15 +1053,15 @@ body {
   transform: translateX(-50%);
 }
 
+.team-person {
+  position: relative;
+}
+
 .team-person__photo {
   width: 160px;
   height: 160px;
   border-radius: 50%;
   transition: all 0.3s ease;
-}
-
-.team-person__photo:hover {
-  background-color: #474747;
 }
 
 .team-person__name {

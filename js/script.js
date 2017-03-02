@@ -3,11 +3,11 @@
 
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
+  nav: true,
+  dots: true,
+  items: 4,
   loop: true,
   margin: 15,
-  nav: true,
-  items: 4,
-  dots: false,
   });
 });
 
