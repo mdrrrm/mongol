@@ -127,6 +127,7 @@
     <div class="counter">
       <div class="container">
         <h2 class="counter__title">До ближайшего полёта:</h2>
+        <div class="counter__countdown"></div>
       </div>
     </div>
 
@@ -143,17 +144,25 @@
           <div class="col6 col-offset1">
             <form class="price-calculator" action="">
               <label class="price-calculator__label" for="route">Маршрут полёта:</label>
+              <div class="price-calculator__input_select_wrap">
               <select class="price-calculator__input price-calculator__input_select" id="route">
                 <option value="">Сестрорецк – Парнас</option>
                 <option value="">Всеволожск — Кудрово</option>
                 <option value="">Ломоносов — Красное Село</option>
               </select>
+              </div>
               <label class="price-calculator__label" for="people">Количество человек:</label>
+              <div class="price-calculator__input_number_wrap">
               <input class="price-calculator__input" id="people" type="number" value="2" min="1">
+              </div>
               <label class="price-calculator__label" for="name">Имя и фамилия:</label>
+              <div class="price-calculator__input_name_wrap">
               <input class="price-calculator__input price-calculator__input_name" id="name" type="text" placeholder="Поля Фокус">
+              </div>
               <label class="price-calculator__label" for="phone">Телефон:</label>
+              <div class="price-calculator__input_phone_wrap">
               <input class="price-calculator__input price-calculator__input_phone" id="phone" type="text" placeholder="89215674566">
+              </div>
               <label class="price-calculator__label price-calculator__label_total" for="total">Стоимость:</label>
               <output class="price-calculator__total-sum" name="total">9000</output>
               <span class="price-calculator__total-sum_rub"> Р</span>
@@ -243,23 +252,23 @@
         <div class="row">
           <h2 class="team__title">Команда инструкторов</h2>
           <div class="team-person col3">
-            <img class="team-person__photo team-person__photo_maria" src="img/team-maria.jpg" alt="Мария Мариева">
+            <div class="team-person__photo team-person__photo_maria"></div>
             <span class="team-person__name">Мария Мариева</span>
             <span class="team-person__position">Старший пилот</span>
           </div>
           <div class="team-person col3">
-            <img class="team-person__photo" src="img/team-nadejda.jpg" alt="Надежда Надеждова">
-            <span class="team-person__name team-person__name_nadejda">Надежда Надеждова</span>
+            <div class="team-person__photo team-person__photo_nadejda"></div>
+            <span class="team-person__name">Надежда Надеждова</span>
             <span class="team-person__position">Второй пилот</span>
           </div>
           <div class="team-person col3">
-            <img class="team-person__photo" src="img/team-irina.jpg" alt="Ирина Иринова">
-            <span class="team-person__name team-person__name_irina">Ирина Иринова</span>
+            <div class="team-person__photo team-person__photo_irina"></div>
+            <span class="team-person__name">Ирина Иринова</span>
             <span class="team-person__position">Авиадиспетчер</span>
           </div>
           <div class="team-person col3">
-            <img class="team-person__photo" src="img/team-alena.jpg" alt="Алена Аленова">
-            <span class="team-person__name team-person__name_alena">Алена Аленова</span>
+            <div class="team-person__photo team-person__photo_alena"></div>
+            <span class="team-person__name">Алена Аленова</span>
             <span class="team-person__position">Авиатехник</span>
           </div>
         </div>
@@ -351,6 +360,7 @@
             </li>
           </ul>
         </nav>
+        <div id="scrollTop"></div>
       </div>
     </div>
     </footer>

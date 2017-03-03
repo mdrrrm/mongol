@@ -178,6 +178,21 @@ body {
   text-decoration: none;
 }
 
+#scrollTop {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  display: block;
+  width: 29px;
+  height: 29px;
+  background-image: url(../img/scrolltop-btn.svg);
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+}
+
 
 
 
@@ -678,6 +693,11 @@ body {
   box-shadow: none;
 }
 
+.price-calculator__input:focus {
+  -webkit-box-shadow: 0 0 0 2 #46b0dc;
+  box-shadow: 0 0 0 2 #46b0dc;
+}
+
 .price-calculator__input::-webkit-input-placeholder {
   color:#444444;
   font-size: 18px;
@@ -704,9 +724,39 @@ body {
   margin-top: 0px;
 }
 
-.price-calculator__input_select:after {
-  content: '-';
+.price-calculator__input_select_wrap {
+  position: relative;
 }
+
+.price-calculator__input_select_wrap:before {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  left: 530px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border: 9px solid transparent;
+  border-left-width: 6px;
+  border-right-width: 6px;
+  border-bottom-color: #e8e8e8;
+  pointer-events: none;
+}
+
+.price-calculator__input_select_wrap:after {
+  content: '';
+  position: absolute;
+  left: 530px;
+  top: 22px;
+  width: 0;
+  height: 0;
+  border: 9px solid transparent;
+  border-left-width: 6px;
+  border-right-width: 6px;
+  border-top-color: #e8e8e8;
+  pointer-events: none;
+}
+
 
 select {
    -webkit-appearance: none; 
@@ -714,14 +764,75 @@ select {
    appearance: none;     
 }
 
-.price-calculator__input_name {
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    cursor: pointer;
+    display: block;
+    width: 14px;
+    color: #333;
+    text-align: center;
+    position: relative;
+}
+
+input[type=number]::-webkit-inner-spin-button:hover { 
+    color: #236DCD;
+}
+
+input[type=number]::-webkit-inner-spin-button:before,
+input[type=number]::-webkit-inner-spin-button:after {
+    content: "^";
+    position:absolute;
+    right: 0;
+    font-family:monospace;
+    line-height:
+}
+
+.price-calculator__input_number_wrap {
   position: relative;
+}
+
+.price-calculator__input_number_wrap:before {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  left: 530px;
+  top: 60px;
+  width: 0;
+  height: 0;
+  border: 9px solid transparent;
+  border-left-width: 6px;
+  border-right-width: 6px;
+  border-bottom-color: #e8e8e8;
+  pointer-events: none;
+}
+
+.price-calculator__input_number_wrap:after {
+  content: '';
+  position: absolute;
+  left: 530px;
+  top: 82px;
+  width: 0;
+  height: 0;
+  border: 9px solid transparent;
+  border-left-width: 6px;
+  border-right-width: 6px;
+  border-top-color: #e8e8e8;
+  pointer-events: none;
+}
+
+.price-calculator__input_name {
   padding-left: 37px;
 }
 
-.price-calculator__input_name:before {
+.price-calculator__input_name_wrap {
+  position: relative;
+}
+
+.price-calculator__input_name_wrap:before {
   content: '';
   position: absolute;
+  top: 132px;
+  left: 210px;
   display: block;
   width: 15px;
   height: 15px;
@@ -733,14 +844,19 @@ select {
 }
 
 .price-calculator__input_phone {
-  position: relative;
-  padding-left: 37px;
+   padding-left: 37px;
   padding-top: 10px;
 }
 
-.price-calculator__input_phone:before {
+.price-calculator__input_phone_wrap {
+  position: relative;
+}
+
+.price-calculator__input_phone_wrap:before {
   content: '';
   position: absolute;
+  top: 191px;
+  left: 208px;
   display: block;
   width: 19px;
   height: 19px;
@@ -772,8 +888,8 @@ select {
 .price-calculator__submit {
   float: right;
   clear: right;
-  padding: 9px 39px 8px 37px;
-  margin-top: 7px;
+  padding: 10px 41px 10px 37px;
+  margin-top: 8px;
   font-size: 18px;
   font-weight: 500;
   color: #ffffff;
@@ -1053,15 +1169,59 @@ select {
   transform: translateX(-50%);
 }
 
-.team-person {
-  position: relative;
-}
-
 .team-person__photo {
   width: 160px;
   height: 160px;
+  margin: 0 auto;
   border-radius: 50%;
-  transition: all 0.3s ease;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+
+.team-person__photo_maria {
+background-image: url(../img/team-maria.jpg);
+}
+
+.team-person__photo_nadejda {
+background-image: url(../img/team-nadejda.jpg);
+}
+
+.team-person__photo_irina {
+background-image: url(../img/team-irina.jpg);
+}
+
+.team-person__photo_alena {
+background-image: url(../img/team-alena.jpg);
+}
+
+.team-person__photo_maria:hover, .team-person__photo_nadejda:hover{
+  background-image: url(../img/team-pilot.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: 104px 39px;
+  background-size: 104px 39px;
+  background-color: #474747;
+  cursor: pointer;
+}
+.team-person__photo_irina:hover{
+  background-image: url(../img/team-control.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: 38px 89px;
+  background-size: 38px 89px;
+  background-color: #474747;
+  cursor: pointer;
+}
+.team-person__photo_alena:hover{
+  background-image: url(../img/team-technic.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: 71px 71px;
+  background-size: 71px 71px;
+  background-color: #474747;
+  cursor: pointer;
 }
 
 .team-person__name {
